@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Final Website</title>
+    <link href="final.css" rel="stylesheet" type="text/css" ; />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c824a31966.js" crossorigin="anonymous"></script>
+    <script src="final.js" type="text/javascript">
+    </script>
+</head>
+<body>
+
+
+    <div class="nav-container">
+        <nav class="navi">
+            <h1 id="logo">
+                GoodDeeds
+            </h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>           <!--On this page the admin will be able to login to his own page--> 
+                <li><a href="halls.html">Halls</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus1.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="blogin" class="blankcontainer "></div>
+
+    <div class="login-container">
+        <div class="login-content">
+
+
+
+            <div class="col-left">
+
+
+                <img id="loginimg" src="hi1.jpg" alt="Alternate Text" />
+
+
+            </div>
+            <div class="col-right">
+
+                <h1 >
+                    GoodDeeds
+                </h1>
+                <h5>Sign into your account</h5>
+
+                <form id="loginform">
+                    <input type="text" id="username" required placeholder="Username" name="name" value="" />            <!--So I made a form with basic css customization, and selted specific values which the admin will need to input to be able to acess to the admina page-->.
+                    <br />                                                                                                           <!--Which are username: admin    password:132-->
+                    <br />                                                                                                <!--If the user does not fill the inputs correctly the system will deny the acess to the admin page, being the page of login again loaded, with a warning of wrong credentials.--> 
+                    <input type="password" id="password" required placeholder="Password" name="name" value="" />
+                    <br />
+                    <br />
+                    <button onclick="checkcred()" id="loginbtn">Submit  </button>
+                </form>
+
+                <div class="login-info">
+                    <p> <a href="#">Forgot Password? </a> <br /> Do not have an account? <a href=" #">Register here</a> </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    
+
+
+
+
+
+    <div id="blogin" class="blankcontainer "></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="change" class="formupdates">
+            <h3>
+                GET UPDATES
+            </h3>
+
+            <form>
+
+
+                <input type="text" placeholder="First Name" name="name" value="" />
+                <input type="text" placeholder=" Last Name" name="name" value="" />
+                <input type="email" placeholder=" Email Address" name="name" value="" />
+
+                <button onclick="subchange()"> Submit  </button>
+
+
+
+
+            </form>
+
+        </div>
+        <div id="confirmation">
+
+
+            <h3>  Submission Sent! </h3>
+
+
+
+        </div>
+
+
+
+        <div class="footer-top">
+
+            <div class="aboutus-footer">
+
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh eget duiodales et.equat magna augue, nec molestie odio porttitor sed. Maecenas convallis velit diam, vitae tempus metus dignissim sit amet. In mollis, elit </p>
+                <ul class=" sci">
+                    <li>  <a href="#"><i class="fab fa-facebook"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-instagram"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-youtube"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                </ul>
+
+            </div>
+
+            <div class=" links-footer">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="login.html">Admin </a></li>
+                </ul>
+
+
+
+
+
+            </div>
+            <div class="contact">
+
+                <h3>
+                    Contact us
+
+                </h3>
+
+                <ul class=" info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i>  </span>
+                        <p>  <a href="#"> Rua Olimpiod Duarte ALves, P6 19460, USA</a></p>
+
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i>  </span>
+                        <p>  <a href="tel:12345678900">35196815568 </a><br />  <a href="tel:12345678900">351969629648</a>  </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i>  </span>
+                        <p>  <a href="mailto:diogocheng21@gmail.com">diogocheng21@gmail.com</a></p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class=" footer-bottom">
+            <p>Copyright &copy; 2020 - Company - All rights reserved. Porewed by MMU<p />
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

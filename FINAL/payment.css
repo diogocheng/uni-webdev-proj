@@ -1,0 +1,471 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-panel {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    position:relative;
+}
+
+.panel-body {
+    padding: 45px 80px 0;
+    flex: 1;
+}
+.panel-body1 {
+    padding: 45px 80px 0;
+    flex: 1;
+    height:1000px;
+}
+
+.title {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #2e2e2e;
+}
+
+.progress-bar {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.step {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 30px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+    .step:after {
+        position: absolute;
+        z-index: -1;
+        top: 5px;
+        left: 22px;
+        width: 225px;
+        height: 6px;
+        content: '';
+        background-color: #efefef;
+    }
+
+    .step:before {
+        color: #2e2e2e;
+        position: absolute;
+        top: 40px;
+    }
+
+    .step:last-child:after {
+        content: none;
+    }
+
+    .step.active {
+        background-color: darkorange;
+    }
+
+        .step.active:after {
+            background-color: darkorange;
+        }
+
+        .step.active:before {
+            color: darkorange;
+        }
+
+        .step.active + .step {
+            background-color: darkorange;
+        }
+
+            .step.active + .step:before {
+                color: darkorange;
+            }
+
+    .step:nth-child(1):before {
+        content: 'Ammount';
+    }
+
+    .step:nth-child(2):before {
+        right: -15px;
+        content: 'Billing ';
+    }
+
+    .step:nth-child(3):before {
+        right: -25px;
+        content: 'Payment';
+    }
+
+    .step:nth-child(4):before {
+        right: 0;
+        content: 'Finish';
+    }
+
+.payment-method {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+.method {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    height: 122px;
+    padding-top: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: rgb(249, 249, 249);
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logos {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-input {
+    margin-top: 20px;
+}
+
+input[type='radio'] {
+    display: inline-block;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .input-fields label {
+        display: block;
+        margin-bottom: 10px;
+        color: #b4b4b4;
+        margin-right:20px;
+    }
+
+.info {
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    margin-top: 50px;
+    opacity: 0.5;
+    color: #2e2e2e;
+}
+
+div[class*='column'] {
+    width: 382px;
+}
+
+input[type='text'], input[type='number'], input[type='email'],
+input[type='password'], option, select{
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding-right: 40px;
+    padding-left: 16px;
+    color: rgba(46, 46, 46, .8);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+    outline: none;
+}
+
+    input[type='text']:focus,
+    input[type='password']:focus
+    input[type='number']:focus,
+    input[type='email']:focus ,option:focus, select:focus {
+        border-color: rgb(119, 219, 119);
+    }
+
+#date {
+    background: url(icons_calendar_black.png) no-repeat 95%;
+}
+
+#cardholder {
+    background: url(icons_person_black.png) no-repeat 95%;
+}
+
+#cardnumber {
+    background: url(icons_card_black.png) no-repeat 95%;
+}
+
+#verification {
+    background: url(icons_lock_black.png) no-repeat 95%;
+}
+
+.small-inputs {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+    .small-inputs div ,select {
+        width: 182px;
+    }
+.small-inputs1 {
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+    .small-inputs1 div, select {
+        width: 182px;
+    }
+
+.panel-footer {
+    display: flex;
+    width: 100%;
+    height: 96px;
+    padding: 0 80px;
+    background-color: rgb(239, 239, 239);
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+
+.btn {
+    font-size: 16px;
+    width: 163px;
+    height: 48px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 23px;
+}
+
+.back-btn {
+    color: darkorange;
+    background: #fff;
+}
+
+.next-btn {
+    color: #fff;
+    background: darkorange;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.blue-border {
+    border: 1px solid rgb(110, 178, 251);
+}
+
+.warning {
+    border-color: darkorange;
+}
+#camps{
+
+    border-radius:5px;
+}
+.column-1 label {
+
+    margin-top:10px;
+
+}
+.column-2 label {
+    margin-top: 10px;
+}
+.donation-right {
+}
+    .donation-right p {
+        font-size: 12px;
+        font-weight: 300;
+        display: block;
+        margin-top: 10px;
+        opacity: 0.5;
+        color: #2e2e2e;
+        text-align:center;
+    }
+.description-painel{
+    margin-top:100px;
+    display:grid;
+    grid-template-columns:1fr 260px;
+    position:relative;
+    height:40vh;
+}
+.donation-left{
+
+    grid-column:1/2;
+    
+}
+.donation-right {
+    position:absolute;
+    top:0;
+    grid-column: 2/3;
+    align-self:flex-end;
+}
+
+
+.totals{
+
+    margin-top:150px;
+
+
+}
+.totals .totals-item {
+    
+
+
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.totals-item label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+
+.totals-value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+
+
+
+.totals-item-total {
+    font-weight:700;
+}
+
+.ammount-money{
+
+
+    margin-top:14px;
+
+}
+
+.ammount-money form button {
+    box-shadow: inset 0px -2px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 13px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 23px;
+    text-decoration: none;
+    text-shadow: 0px 0px 11px #ffee66;
+}
+    .ammount-money form button:hover {
+        background: linear-gradient(to bottom, darkorange 5%, #ffec64 100%);
+        background-color: #ffab23;
+    }
+    .ammount-money form button:active {
+        box-shadow: inset 0px -2px 0px 0px #fff6af;
+        background-color: #ffec64;
+        border-radius: 13px;
+        border: 1px solid darkorange;
+        display: inline-block;
+        cursor: pointer;
+        color: #333333;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 23px;
+        text-decoration: none;
+        text-shadow: 0px 2px 11px #ffee66;
+    }
+
+    #cbtn {
+        margin-left: 30px;
+    }
+#customam{
+    width:460px;
+    display:none;
+}
+.totals {
+    height:84px;
+    width:100%;
+    position:absolute;
+    bottom:10%;
+    left:1%;
+    
+    
+}
+.totals-item label {
+
+    
+}
+
+.totals-item p {
+    margin: 0;
+    width: 150px;
+    white-space: nowrap;
+    height:20px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#act {
+    background-color: darkorange;
+}
+#info1{
+
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:66px;
+    margin-top:0;
+
+}
+.terms{
+
+    margin-top:10px;
+    display:flex;
+}
+#termsp {
+
+
+    margin-top:40px;
+}
+#hello{
+
+    height:400px;
+    width:400px;
+    margin-left:70px;
+}
+.paylast{
+
+    width:80%;
+    margin-left:14%
+}
+#last1 {
+    color: #b4b4b4;
+    font-size:18px;
+    margin-right:70px;
+}

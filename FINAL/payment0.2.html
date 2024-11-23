@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Final Website</title>
+    <link href="payment.css" rel="stylesheet" type="text/css" ; />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c824a31966.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="final.js" type="text/javascript">
+    </script>
+</head>
+<body>
+
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+            <h2 class="title">Payment Page</h2>
+
+            <div class="progress-bar">
+                <div class="step" id="act"></div>
+                <div class="step"></div>
+                <div class="step"></div>                  <!--On this payment page I opted to include one bar which in say to the user the progression within the payment process, with this feature the user will be able to follow his own payment process-->
+                <div class="step"></div>                   <!--To make this progress bar I used the technique called after which is bascillt allows me to choose the items in a different way. This was also the first time that I used, despite that I think I made I really good job-->
+            </div>
+
+            <div class="description-painel">
+
+
+
+
+                <div class="donation-left">
+
+
+
+
+                    <p id="info1"> Please insert the amount desired: </p>
+
+                    <div class=" ammount-money">
+
+
+
+                        <form>
+
+
+
+                            <button onclick="ten()" type="button"> $ 10  </button>
+                            <button onclick="tfive()" type="button"> $ 25 </button>               <!--On this page the user will be ablo to choose the ammount desired to pay, I gave the opportunity to the user to donate 10, 25 and also 50. if the user actually wants to give a different ammount of money the user can click on the cusotm ammount button which will trigger one input box which is where the user will be able to insert the cusotm ammount of money.-->
+                            <button onclick="f()" type="button"> $ 50 </button>
+
+                            <button type="button" onclick="boxappear()" id="cbtn"> CUSTOM AMOUNT </button>
+
+
+                        </form>
+
+
+
+                    </div>
+
+
+                    <div class="pay-money ">
+
+                        <p>      <input id="customam" oninput="addvalue()" placeholder="Custom Value" type="number" name="name" value="" />         </p> <!--This is the input box refered above. where the user can input the ammount desired.-->
+
+
+                    </div>
+
+                    <div class="totals">
+                        <div class="totals-item">
+                            <label>Subtotal: </label>  <p id="cart-subtotal">   </p>
+
+                        </div>
+                        <div class="totals-item">
+                            <!--To complement the progression view of the user I implemented a div which will show the the sub-total, the tax-total and the total.-->
+                            <label> Tax (5%): </label> <p id="cart-tax">   </p>                    <!--Whenever the user inputs data from above this div will be updated accordgly with the ammount inputed.-->
+                            <!--In my opinion having this types of things which contribuite to a better experience of the user, are something essential, if the user for some reason loses track of what they are doing just because there is no some sort of evidence of progression  of the features, the user will lose the interest.-->
+                        </div>
+
+                        <div class="totals-item totals-item-total">
+                            <label>Grand Total: </label>  <p id="cart-total"> </p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="donation-right">
+
+                    <img id="camps" src="cap44.jpg" alt="Alternate Text" />
+
+                    <p id=" campst"> Cuba Campaign </p>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button onclick="window.location.href='home.html'" class="btn back-btn">Home</button>
+                <button onclick="window.location.href='paymentpage2.html'" class="btn next-btn">Next Step</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+            var input1 = document.getElementById("customam");
+            var total1 = document.getElementById("cart-subtotal")
+            var total2 = document.getElementById("cart-tax")
+            var total3 = document.getElementById("cart-total")
+
+            var a = 1;
+            function boxappear() {
+
+
+
+                if (a == 1) {
+
+                    input1.style.display = "inline";
+
+                }
+                else {
+
+                    input1.style.display = "none";
+                }
+
+            }
+
+            function addvalue() {
+
+
+                document.getElementById("cart-subtotal").innerHTML = input1.value + "$";
+                document.getElementById("cart-tax").innerHTML = input1.value * 0.05 + "$";
+                document.getElementById("cart-total").innerHTML = input1.value * 1.05 + "$";
+                document.getElementById("page3total").innerHTML = inpu1.value * 1.05 + "$"
+
+
+            }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

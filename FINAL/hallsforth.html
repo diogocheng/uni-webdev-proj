@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Final Website</title>
+    <link href="final.css" rel="stylesheet" type="text/css" ; />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c824a31966.js" crossorigin="anonymous"></script>
+    <script src="final.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <section>
+        <div class="nav-container2">
+            <nav class="navi2">
+                <h1 id="logo">
+                    GoodDeeds
+                </h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="Campaigns.html">Campaigns</a></li>
+                    <li><a class="homeul" href="#">Halls</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactus1.html">Contact us</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="aboutus-box2 ">
+
+
+                <div class="aboutus-box-title2  ">
+
+
+
+                    <h3>  Halls    </h3>
+                    <div class="verticalLine">
+
+                    </div>
+                </div>
+
+
+                <div class=" aboutus-box-text2">
+                    <p>
+                        For an individual, a family, a community, and an entire country
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="blankcontainer">
+    </div>
+
+    <div class="thistext">
+
+        <h3> Our halls and coworking rooms </h3>
+
+    </div>
+    <div class=" blankcontainer"></div>
+
+
+    <div class="halls-container">
+
+
+
+        <div class="halls-content">
+
+            <div class="halls-right">
+
+
+                <div class="slide">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="hall5.jpg" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="hall2.jpg" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="hall3.jpg" style="width:100%">
+                            <div class="text">Caption Three</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br />
+
+
+                </div>
+
+                <div class="details">
+                    <h4> Gooddeds Warehouse</h4>
+                    <hr />
+                    <br />
+                    <h5> DESCRIPTION</h5>
+                    <br />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit Momsan. Interdum et tort</p>
+                    <br />
+                    <hr />
+                    <br />
+                    <h5>AMENITIES</h5>
+                    <br />
+                    <ul>
+                        <li><i class="fas fa-coffee"></i> Coffe, Tea</li>
+                        <li><i class="fas fa-wheelchair"></i> Wheelchair</li>
+                        <li><i class="fas fa-wifi"></i> Internet</li>
+                        <li><i class="fas fa-clipboard"></i> Flip board</li>
+                        <li><i class="fas fa-dumbbell"></i> Gym</li>
+                        <li><i class="fas fa-gamepad"></i> Gaming center</li>
+                        <li> <i class="fas fa-users"></i> 36 persons </li>
+                    </ul>
+                    <br />
+                    <hr />
+                    <br />
+                    <h5>PRICE</h5>
+                    <br />
+                    <p> 580$ per day</p>
+                    <br />
+                    <hr />
+                    <br />
+
+
+                </div>
+
+
+                <a id="detailsbtn" href="Reservehalls.html"> Make Reservation </a>
+                <a id="detailsbtn1" href="contactus1.html"> Contact for More Info  </a>
+
+
+            </div>
+            <span id="vl1"> </span>
+
+            <div class="halls-left">
+
+
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75993.07573246796!2d-2.293502128959373!3d53.472327151775076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2sManchester%2C%20Reino%20Unido!5e0!3m2!1spt-PT!2spt!4v1613147874822!5m2!1spt-PT!2spt" width="100%" height="506.25px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+                <div class=" calendar11">
+                    <iframe src="https://www.availabilitycalendar.com/embed/Ie0ZmdfNbrPAELPokV28/en-0-0-2-1-0-0-0-0-0-0-0-1-0/" height="246" width="100%" frameborder="0" allowtransparency="true"></iframe>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="change" class="formupdates">
+            <h3>
+                GET UPDATES
+            </h3>
+
+            <form>
+
+
+                <input type="text" placeholder="First Name" name="name" value="" />
+                <input type="text" placeholder=" Last Name" name="name" value="" />
+                <input type="email" placeholder=" Email Address" name="name" value="" />
+
+                <button onclick="subchange()" id="sub-button">Submit  </button>
+
+
+
+
+            </form>
+
+        </div>
+        <div id="confirmation">
+
+
+            <h3>  Submission Sent! </h3>
+
+
+
+        </div>
+
+
+
+        <div class="footer-top">
+
+            <div class="aboutus-footer">
+
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh eget duiodales et.equat magna augue, nec molestie odio porttitor sed. Maecenas convallis velit diam, vitae tempus metus dignissim sit amet. In mollis, elit </p>
+                <ul class=" sci">
+                    <li>  <a href="#"><i class="fab fa-facebook"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-instagram"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-youtube"></i></a> </li>
+                    <li>  <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                </ul>
+
+            </div>
+
+            <div class=" links-footer">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="login.html">Admin </a></li>
+                </ul>
+
+
+
+
+
+            </div>
+            <div class="contact">
+
+                <h3>
+                    Contact us
+
+                </h3>
+
+                <ul class=" info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i>  </span>
+                        <p>  <a href="#"> Rua Olimpiod Duarte ALves, P6 19460, USA</a></p>
+
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i>  </span>
+                        <p>  <a href="tel:12345678900">35196815568 </a><br />  <a href="tel:12345678900">351969629648</a>  </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i>  </span>
+                        <p>  <a href="mailto:diogocheng21@gmail.com">diogocheng21@gmail.com</a></p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class=" footer-bottom">
+            <p>Copyright &copy; 2020 - Company - All rights reserved. Porewed by MMU<p />
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+</html>
